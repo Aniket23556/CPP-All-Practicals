@@ -1,0 +1,10 @@
+{
+    "CodeGPT.Autocomplete.enabled": true,
+    "CodeGPT.apiKey": "CodeGPT Plus Beta",
+    "files.associations": {
+        "ostream": "cpp",
+        "xlocale": "cpp",
+        "iostream": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
