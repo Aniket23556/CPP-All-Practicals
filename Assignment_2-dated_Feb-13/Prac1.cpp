@@ -61,11 +61,33 @@ void removeDuplicates() {
                     arr[k] = arr[k + 1], n--;   
             else
                 j++;
+    cout << "Array after removing duplicates: ";
+    for(int i = 0; i < n; i++)
+        cout << arr[i] << " ";
+    cout << "\n";
 }
 
+//With Swap functions
+// void reverseArray() {
+//     for (int i = 0; i < n / 2; i++) 
+//         swap(arr[i], arr[n - i - 1]);
+
+
+// Without Swap function.
 void reverseArray() {
-    for (int i = 0; i < n / 2; i++) 
-        swap(arr[i], arr[n - i - 1]);
+    int start = 0;
+    int end = n - 1;
+    while (start < end) {
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+    }
+    cout << "Reversed Array: ";
+    for(int i = 0; i < n; i++)
+        cout << arr[i] << " ";
+    cout << "\n";
 }
 
 int main() {
@@ -104,4 +126,3 @@ int main() {
     }
     return 0;
 }
-
