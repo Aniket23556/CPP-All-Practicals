@@ -1,3 +1,11 @@
+// Q1. WAP to read 2 matrices of order ‘n1’ by ‘m1’ and ‘n2’ by ‘m2’. Write a menu-driven
+// Program to perform following Matrix operations after checking the compatibility of the
+// Matrices for the selected operation
+// i. Addition
+// ii. Subtraction
+// iii. Multiplication
+
+
 #include <iostream>
 using namespace std;
 

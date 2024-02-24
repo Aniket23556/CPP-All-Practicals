@@ -1,3 +1,11 @@
+// Q2. WAP to read a matrix of order ‘n1’ by ‘m1’ and perform the following operations
+// i. Transpose of the matrix
+// ii. Sum of its major and minor diagonal elements
+// iii. Sum of the elements of each row and column separately.
+// iv. Find out the largest and the smallest element in each row separately and overall largest
+// and smallest element of the matrix.
+
+
 #include <iostream>
 using namespace std;
 
