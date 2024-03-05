@@ -22,7 +22,7 @@ public:
 
     // To display information of all the students 
     static void queryAll(const Student students[], int n) {
-        cout << "Displaying information for all students:" << std::endl;
+        cout << "Displaying information for all students:" << endl;
         for (int i = 0; i < n; ++i) {
             students[i].display();
         }
@@ -36,14 +36,14 @@ public:
                 return;
             }
         }
-        cout << "Student with Roll Number " << roll << " not found." << std::endl;
+        cout << "Student with Roll Number " << roll << " not found." << endl;
     }
 
     // To Display total number of students greater than a certain marks
     static void query(const Student students[], int n, double minMarks) {
-        cout << "Displaying information for students with marks greater than " << minMarks << ":" << std::endl;
+        cout << "Displaying information for students with marks greater than " << minMarks << ":" << endl;
         for (int i = 0; i < n; ++i) {
-            if (students[i].marks > minMarks) {
+            if (students[i].marks > minMarks) { 
                 students[i].display();
             }
         }
