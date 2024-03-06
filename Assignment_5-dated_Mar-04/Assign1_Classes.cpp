@@ -49,7 +49,7 @@ public:
     // Sum of two matrices
     Matrix sum(const Matrix other) const {
         if (rows != other.rows || cols != other.cols) {
-            throw std::invalid_argument("Matrices must be of the same size for addition.");
+            throw invalid_argument("Matrices must be of the same size for addition.");
         }
 
         Matrix result;
@@ -68,7 +68,7 @@ public:
     // Difference of two matrices
     Matrix difference(const Matrix other) const {
         if (rows != other.rows || cols != other.cols) {
-            throw std::invalid_argument("Matrices must be of the same size for Substraction.");
+            throw invalid_argument("Matrices must be of the same size for Substraction.");
         }
 
         Matrix result;
@@ -87,7 +87,7 @@ public:
     // Product of two matrices
     Matrix product(const Matrix other) const {
         if (cols != other.rows) {
-            throw std::invalid_argument("Number of columns in first matrix must be equal to number of rows in second matrix for multiplication.");
+            throw invalid_argument("Number of columns in first matrix must be equal to number of rows in second matrix for multiplication.");
         }
 
         Matrix result;
