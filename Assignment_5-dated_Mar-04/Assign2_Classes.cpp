@@ -9,22 +9,22 @@ using namespace std;
 
 class Figure {
 private:
-    int lenght;
+    int length;
     int breadth;
 
 public:
     Figure(int s1, int s2) {
-        lenght = s1;
+        length = s1;
         breadth = s2;
     }
 
     Figure(int s) {
-        lenght = breadth = s;
+        length = breadth = s;
     }
 
     // Function to calculate area of rectangle
     int area() {
-        return side1 * side2;
+        return length * breadth;
     }
 
     // Function to calculate area of square
