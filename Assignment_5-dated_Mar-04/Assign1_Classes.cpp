@@ -37,12 +37,12 @@ public:
     }
 
     void displayMatrix() const {
-        cout << "Matrix:\n";
+        // cout << "Matrix:\n";
         for (int i = 0; i < rows; ++i) {
             for (int j = 0; j < cols; ++j) {
                 cout << mat[i][j] << " ";
             }
-            cout << endl;
+            // cout << endl;
         }
     }
 
@@ -127,9 +127,9 @@ int main() {
     int rows, cols;
     Matrix mat1,mat2, result;
 
-    int choice = 0;
+    int choice = -1;
     int choose;
-    while (choice) {
+    while (choice!=6) {
         cout << "Select operation:\n";
         cout << "1. Create Matrices\n";
         cout << "2. Sum\n";
@@ -192,6 +192,7 @@ int main() {
                             break;
                     }
                 }
+                break;
             }
 
             case 6:
@@ -204,4 +205,3 @@ int main() {
     }
     return 0;
 }
-
