@@ -103,29 +103,31 @@ int main() {
     while  (choice!=0) {
         cout << "Choose operation:" << endl;
         cout << "1. Matrix Multiplication\n2. Martix Addition\n3. Matrix Subtraction\n0. Exit\n";
-        cout << "Enter your Choice:\n";
+        cout << "Enter your Choice:";
         cin >> choice;
 
         void (*fnptr)(int[][C1], int[][C2]);
         switch (choice) {
             case 1:
                 fnptr = mulMat;
+                fnptr(mat1, mat2);
                 break;
             case 2:
                 fnptr = addMat;
+                fnptr(mat1, mat2);
                 break;
             case 3:
                 fnptr = subMat;
+                fnptr(mat1, mat2);
                 break;
-            case 4:
+            case 0:
+                cout << "Exiting Program." << endl;
                 break;
             default:
                 cout << "Invalid choice!" << endl;
                 return 1;
         }
-
-        fnptr(mat1, mat2);
-
     }
     return 0;
 }
+
