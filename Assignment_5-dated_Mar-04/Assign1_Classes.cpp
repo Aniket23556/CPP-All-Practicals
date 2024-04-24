@@ -37,17 +37,17 @@ public:
     }
 
     void displayMatrix() const {
-        // cout << "Matrix:\n";
+        cout << "Matrix:\n";
         for (int i = 0; i < rows; ++i) {
             for (int j = 0; j < cols; ++j) {
                 cout << mat[i][j] << " ";
             }
-            // cout << endl;
+            cout << endl;
         }
     }
 
     // Sum of two matrices
-    Matrix sum(const Matrix other) const {
+    Matrix sum(const Matrix other){
         if (rows != other.rows || cols != other.cols) {
             throw invalid_argument("Matrices must be of the same size for addition.");
         }
@@ -66,7 +66,7 @@ public:
     }
 
     // Difference of two matrices
-    Matrix difference(const Matrix other) const {
+    Matrix difference(const Matrix other){
         if (rows != other.rows || cols != other.cols) {
             throw invalid_argument("Matrices must be of the same size for Substraction.");
         }
@@ -85,7 +85,7 @@ public:
     }
 
     // Product of two matrices
-    Matrix product(const Matrix other) const {
+    Matrix product(const Matrix other){
         if (cols != other.rows) {
             throw invalid_argument("Number of columns in first matrix must be equal to number of rows in second matrix for multiplication.");
         }
@@ -107,7 +107,7 @@ public:
     }
 
     // Transpose of the matrix
-    Matrix transpose() const {
+    Matrix transpose(){
         Matrix result;
         result.rows = cols;
         result.cols = rows;
@@ -153,6 +153,7 @@ int main() {
                 result = mat1.sum(mat2);
                 cout << "Sum of Matrix";mat1.displayMatrix();cout<<"and";mat2.displayMatrix();cout<< "is:\n";
                 result.displayMatrix();
+                mat1.displayMatrix();
                 break;
             case 3:
                 result = mat1.difference(mat2);
