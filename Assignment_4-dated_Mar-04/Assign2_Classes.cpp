@@ -110,9 +110,9 @@ int main() {
     int rows, cols;
     Matrix mat1,mat2, result;
 
-    int choice = 0;
-    int choose;
-    while (choice) {
+    int choice = 1;
+    int choose = 1;
+    while (choice!=5) {
         cout << "Select operation:\n";
         cout << "1. Create Matrices\n";
         cout << "2. Sum\n";
@@ -169,6 +169,7 @@ int main() {
                             break;
                     }
                 }
+                break;
             }
 
             case 5:
